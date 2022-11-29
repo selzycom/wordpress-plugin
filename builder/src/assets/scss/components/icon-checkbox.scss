@@ -1,0 +1,31 @@
+.b-icon-checkbox {
+  cursor: pointer;
+}
+
+.b-icon-checkbox__input {
+  width: 0;
+  height: 0;
+  visibility: visible;
+  overflow: hidden;
+  z-index: -100;
+  opacity: 0;
+  display: none;
+
+  &:checked ~ .b-icon-checkbox__icon {
+    & svg {
+      fill: $primary;
+    }
+  }
+}
+
+.b-icon-checkbox__icon {
+  width: 100%;
+  height: 100%;
+  @include flex-row;
+  @include flex-center;
+
+  & svg {
+    width: 100%;
+    fill: $dark;
+  }
+}

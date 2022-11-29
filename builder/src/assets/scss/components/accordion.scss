@@ -1,0 +1,51 @@
+.b-accordion {
+  &.active {
+
+    & .b-accordion__header {
+      background-color: $primary;
+
+      & .b-table-colm-title {
+        color: $white;
+      }
+
+      & .b-circle-counter {
+        border-color: $white;
+        color: $white;
+      }
+
+      & .b-field-actions .b-field-actions__item {
+        color: $white;
+      }
+    }
+
+    & .b-accordion__main {
+      display: block;
+    }
+  }
+}
+
+.b-accordion__header {
+  padding: offset(1.5) offset(3);
+
+  @include hover {
+    & .b-field-actions {
+      opacity: 1;
+    }
+  }
+}
+
+.b-accordion__main {
+  padding: offset(2) offset(3);
+  display: none;
+  animation: accordionMain 0.2s ease-in-out forwards;
+
+}
+
+@keyframes accordionMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

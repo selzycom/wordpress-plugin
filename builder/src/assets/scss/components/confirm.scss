@@ -1,0 +1,41 @@
+.b-confirm {
+  padding: 0 offset(0.5);
+  background-color: $dark;
+  position: absolute;
+  bottom: calc(100% + #{offset(1)});
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  border-radius: 4px;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.b-confirm__item {
+  white-space: nowrap;
+  font-size: 14px;
+  color: $white;
+  padding: offset(0.5);
+}
+
+a.b-confirm__item {
+  @include hover {
+    text-decoration: underline;
+  }
+}
+
+.b-confirm__item_red {
+  color: $red !important;
+  &:visited {
+    color: $red !important;
+  }
+}
+
+.b-confirm__item_gray {
+  color: $gray !important;
+  &:visited {
+    color: $gray !important;
+  }
+}

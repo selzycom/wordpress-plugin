@@ -1,0 +1,61 @@
+.b-offsets {
+  border: 1px solid $gray;
+  border-radius: 4px;
+}
+
+.b-offsets__external {
+  width: 100%;
+  padding: offset(1);
+  position: relative;
+}
+
+.b-offsets__internal {
+  width: 100%;
+  border: 1px solid $gray;
+  border-radius: 4px;
+  padding: offset(1);
+  margin: offset(1);
+  position: relative;
+}
+
+.b-offsets__line {
+  @include flex-row(nowrap);
+  @include flex-center;
+  width: 100%;
+}
+
+.b-offsets__input {
+  padding: offset(0.5) offset(1) !important;
+  border: 1px solid $gray !important;
+  border-radius: 4px !important;
+  margin: offset(1) !important;
+  width: 40px !important;
+  min-width: 40px !important;
+  max-width: 40px !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  outline: none !important;
+
+  &::placeholder {
+    color: $gray !important;
+  }
+
+  &:focus {
+    border-color: $primary !important;
+    box-shadow: none !important;
+  }
+}
+
+.b-offset__space {
+  width: 100%;
+}
+
+.b-offset__part-title {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  color: $dark;
+}

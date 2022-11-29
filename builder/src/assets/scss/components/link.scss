@@ -1,0 +1,15 @@
+.b-link {
+  font-size: 14px;
+  line-height: 1.2;
+  color: $primary;
+  text-decoration: underline;
+
+  &:focus {
+    color: $primary;
+  }
+
+  @include hover {
+    text-decoration: none;
+    color: darken($primary, 20%);
+  }
+}

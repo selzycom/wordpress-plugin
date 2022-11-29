@@ -1,0 +1,11 @@
+.b-circle-counter {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $gray;
+  color: $dark;
+  font-size: 14px;
+  line-height: 1;
+  @include flex-row();
+  @include flex-center();
+}

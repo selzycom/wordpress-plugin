@@ -1,0 +1,9 @@
+.b-text {
+  font-size: 13px;
+  line-height: 1.2;
+  color: $dark;
+
+  &_gray {
+    color: $darkGray;
+  }
+}

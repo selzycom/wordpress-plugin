@@ -1,0 +1,62 @@
+#titlediv .inside p.description {
+	margin: 8px 2px 0;
+}
+
+#titlediv .inside p.description label {
+	cursor: pointer;
+}
+
+span.shortcode {
+	display: block;
+	margin: 2px 0;
+}
+
+span.shortcode input {
+	font-size: 12px;
+	border: none;
+	box-shadow: none;
+	padding: 4px 8px;
+	margin: 0;
+}
+
+#wpunisender-form-list-table span.shortcode input,
+#wpunisender-form-editor span.shortcode input {
+	background: transparent;
+}
+
+#wpunisender-form-list-table span.shortcode input {
+	color: #444;
+}
+
+#wpunisender-form-editor span.shortcode input {
+	color: #fff;
+}
+
+#submitpost input.copy {
+	margin-bottom: 10px;
+}
+
+#submitpost input.delete {
+	padding: 0;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+	background: inherit;
+	color: #a00;
+}
+
+#submitpost input.delete:hover {
+	color: #dc3232; /* Red */
+}
+
+#submitpost input.delete:focus {
+	outline: thin dotted;
+}
+
+.postbox-container .postbox h3 {
+	border-bottom: 1px solid transparent;
+}
+
+#metadiv .form-table th {
+	width: 250px;
+}

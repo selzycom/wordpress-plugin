@@ -1,0 +1,99 @@
+.b-box-field {
+  @include flex-row(nowrap);
+  align-items: center;
+  width: 100%;
+  border: 1px solid $gray;
+  padding: 0 offset(1);
+  border-radius: 4px;
+  min-height: 37px;
+
+  &.focus {
+    border-color: $primary;
+  }
+}
+
+.b-box-field__label {
+  font-size: 14px;
+  line-height: 1.2;
+  color: $dark;
+  font-weight: 400;
+  padding-right: offset(1);
+}
+
+.b-box-field__input {
+  outline: none !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  padding: offset(0.8) offset(1) offset(0.8) 0 !important;
+  -webkit-appearance: auto !important;
+  min-width: 40px !important;
+  color: $dark !important;
+  border-radius: 4px !important;
+  border: none !important;
+
+  &:not(:last-child) {
+    margin-right: offset(0.5);
+  }
+
+  &_w-100 {
+    width: 100% !important;
+  }
+
+  &:focus {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+select.b-box-field__input {
+  width: 100% !important;
+  background: none !important;
+
+  &:invalid {
+    color: rgba($dark, 0.8) !important;
+  }
+
+  & option {
+    color: $dark !important;
+  }
+}
+
+input.b-box-field__input {
+  width: auto;
+
+  &::placeholder {
+    color: rgba($dark, 0.8);
+  }
+  &[type="color"] {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+.b-box-field__actions {
+  margin-left: auto;
+}
+
+.b-box-field__arrow {
+  position: relative;
+  width: 16px;
+  height: 16px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid $dark;
+    border-left: 2px solid $dark;
+  }
+}
+
+.b-box-field__color {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}

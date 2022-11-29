@@ -1,0 +1,12 @@
+@keyframes unisenderFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.unisenderFadeIn {
+  animation: unisenderFadeIn 0.5s linear forwards;
+}

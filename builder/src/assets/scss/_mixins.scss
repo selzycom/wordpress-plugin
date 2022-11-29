@@ -1,0 +1,29 @@
+@function offset($n) {
+  @return #{$n * $offset};
+}
+
+@mixin flex-row($wrap: wrap) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: $wrap;
+}
+
+@mixin flex-colm($wrap: wrap) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: $wrap;
+}
+
+@mixin flex-center() {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin hover() {
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    @content;
+  }
+}

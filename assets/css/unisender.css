@@ -1,0 +1,206 @@
+.b-unisender-form {
+}
+
+.b-unisender-form._show-message._success-text .b-unisender-form__message_success-text {
+    display: block;
+}
+
+.b-unisender-form._show-message._validation-error-text .b-unisender-form__message_validation-error-text {
+    display: block;
+}
+
+.b-unisender-form._show-message._server-error-text .b-unisender-form__message_server-error-text {
+    display: block;
+}
+
+.b-unisender-form * {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.b-unisender-form .b-unisender-form__header {
+}
+
+.b-unisender-form .b-unisender-form__title {
+}
+
+.b-unisender-form .b-unisender-form__description {
+}
+
+.b-unisender-form .b-unisender-form__main {
+}
+
+.b-unisender-form .b-unisender-form__field {
+}
+
+.b-unisender-form .b-unisender-form__footer {
+}
+.b-unisender-form .b-unisender-form__footer .b-unisender-form__button-box {
+    display: flex;
+    align-items: center;
+}
+
+.b-unisender-form .b-unisender-form__footer .b-unisender-form__button-box.request svg {
+    display: block;
+}
+
+.b-unisender-form .b-unisender-form__footer .b-unisender-form__button-box.request .b-unisender-form__submit-button {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.7;
+}
+
+.b-unisender-form .b-unisender-form__footer .b-unisender-form__button-box svg {
+    display: none;
+    margin-left: 10px;
+}
+
+.b-unisender-form .b-unisender-form__submit-button {
+    cursor: pointer;
+    transition: opacity 0.1s linear;
+    width: auto;
+    display: inline-block;
+    user-select: none;
+}
+
+.b-unisender-form .b-unisender-form__submit-button:hover {
+    opacity: 0.9;
+}
+
+.b-unisender-form__messages {
+}
+
+.b-unisender-form .b-unisender-form__message {
+    padding: 1em;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    display: none;
+    margin-top: 1em;
+}
+
+.b-unisender-form .b-unisender-form__message_error {
+    border-color: #df1b1b;
+}
+
+.b-unisender-form .b-unisender-form__message_success {
+    border-color: #29bb34;
+}
+
+.b-unisender-form__message_success-text {
+}
+
+.b-unisender-form__message_validation-error-text {
+}
+
+.b-unisender-form__message_server-error-text {
+}
+
+/*field styles*/
+
+.b-unisender-form .b-unisender-field {
+}
+
+.b-unisender-form .b-unisender-field_required .b-unisender-field__label:after {
+    content: '*';
+    line-height: 1;
+    color: #df1b1b;
+}
+
+.b-unisender-form .b-unisender-field._has-error .b-unisender-field__error-text {
+    display: block;
+}
+
+.b-unisender-form .b-unisender-field__label {
+    display: block;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    line-height: inherit;
+    margin-bottom: 0.5em;
+}
+
+.b-unisender-form .b-unisender-field__input {
+    display: block;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    line-height: inherit;
+    outline: none;
+    margin: 0;
+}
+
+.b-unisender-form .b-unisender-field__error-text {
+    display: none;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    color: #df1b1b;
+    line-height: inherit;
+    margin-top: 0.5em;
+    animation: unisenderErrorTextShow 0.2s linear forwards;
+}
+
+@keyframes unisenderErrorTextShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.b-unisender-form .b-unisender-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.b-unisender-form .b-unisender-checkbox._has-error .b-unisender-checkbox__error-text {
+    display: block;
+}
+
+.b-unisender-form .b-unisender-checkbox__input {
+    height: 18px;
+    width: 18px;
+    margin: 0 1em 0 0;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    position: relative;
+    border: none;
+    background: none;
+}
+
+.b-unisender-form .b-unisender-checkbox__input:before {
+    display: none !important;
+}
+
+.b-unisender-form .b-unisender-checkbox__input:after {
+    display: none !important;
+}
+
+.b-unisender-form .b-unisender-checkbox__label {
+    width: calc(100% - 18px - 1em);
+    max-width: 100%;
+    position: relative;
+    top: -0.25em;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.b-unisender-form .b-unisender-checkbox__error-text {
+    display: none;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    color: #df1b1b;
+    line-height: inherit;
+    margin-top: 0.5em;
+    animation: unisenderErrorTextShow 0.2s linear forwards;
+}

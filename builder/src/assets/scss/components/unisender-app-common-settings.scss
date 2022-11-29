@@ -1,0 +1,88 @@
+.b-unisender-app-common-settings {
+  border: 1px solid $gray;
+  background-color: $white;
+}
+
+.b-unisender-app-common-settings__header {
+  @include flex-row;
+}
+
+.b-unisender-app-common-settings__tab-buttons {
+  @include flex-row;
+}
+
+.b-unisender-app-common-settings__tab-button {
+  padding: offset(2) offset(4);
+  font-size: 14px;
+  line-height: 1.2;
+  color: $dark;
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &.active {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:not(.active) {
+    @include hover {
+      background-color: rgba($primary, 0.05);
+    }
+  }
+}
+
+.b-unisender-app-common-settings__toggle-button {
+  padding: offset(2);
+  margin-left: auto;
+
+  & span {
+    display: block;
+    width: 17px;
+    height: 14px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      width: 10px;
+      height: 10px;
+      border-bottom: 2px solid $dark;
+      border-left: 2px solid $dark;
+      transform: translate3d(0, 30%, 0) rotate(135deg);
+    }
+  }
+
+  @include hover {
+    background-color: rgba($primary, 0.05);
+  }
+
+  &.active {
+    & span {
+      &:after {
+        transform: translate3d(0, -10%, 0) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.b-unisender-app-common-settings__main {
+  border-top: 1px solid $gray;
+  animation: unisenderFadeIn 0.5s ease forwards;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.b-unisender-app-common-settings__tab-content {
+  padding: offset(2) offset(4);
+  display: none;
+  animation: unisenderFadeIn 0.5s ease forwards;
+
+  &.active {
+    display: block;
+  }
+}

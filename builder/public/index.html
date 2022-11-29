@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+
+<noscript>
+    <strong>
+        We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.
+    </strong>
+</noscript>
+
+<style>
+    ._place-in-the-admin {
+        max-width: 1440px;
+        margin: auto;
+        padding: 30px;
+    }
+    body {
+        background-color: #f2f2f2;
+    }
+</style>
+<script>
+    const UNISENDER_ADDITIONAL_FIELDS = '[{"id":1,"name":"Name","public_name":"\u0418\u043c\u044f","type":"string","is_visible":1,"view_pos":1},{"id":4,"name":"some_text","public_name":"some_text","type":"text","is_visible":1,"view_pos":1},{"id":5,"name":"select_num","public_name":"select_num","type":"text","is_visible":1,"view_pos":1},{"id":6,"name":"napishite_chtoto","public_name":"napishite_chtoto","type":"text","is_visible":1,"view_pos":1},{"id":7,"name":"age","public_name":"age","type":"number","is_visible":1,"view_pos":1},{"id":8,"name":"editor","public_name":"editor","type":"text","is_visible":1,"view_pos":1},{"id":9,"name":"date","public_name":"date","type":"date","is_visible":1,"view_pos":1}]';
+</script>
+<div class="_place-in-the-admin">
+    <input type="hidden" data-unisender-hidden-field>
+    <div id="unisender-form-builder"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+@import 'font';
+@import 'var';
+@import 'mixins';
+@import 'redefinition';
+@import 'animations';
+// components
+@import './components/unisender-app';
+  @import './components/content';
+
+.b-unisender-app {
+  @import './components/table-colm-title';
+  @import './components/accordion';
+  @import './components/circle-counter';
+  @import './components/field-actions';
+  @import './components/types-list';
+  @import './components/field';
+  @import './components/confirm';
+  @import './components/checkbox';
+  @import './components/label-title';
+  @import './components/block-title';
+  @import './components/box-field';
+  @import './components/icon-radio-list';
+  @import './components/icon-radio';
+  @import './components/icon-checkbox-list';
+  @import './components/icon-checkbox';
+  @import './components/offsets';
+  @import './components/unisender-app-common-settings';
+  @import './components/link';
+  @import './components/text';
+}
+
+* {
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+[name="draggable"] {
+  cursor: all-scroll;
+}

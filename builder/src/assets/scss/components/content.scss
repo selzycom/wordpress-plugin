@@ -1,0 +1,10 @@
+.b-content {
+  & p,
+  & li {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: offset(1.5);
+    }
+  }
+}

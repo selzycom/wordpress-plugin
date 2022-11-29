@@ -1,0 +1,20 @@
+.b-table-colm-title {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $dark;
+  transition: $transition;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  & strong {
+    font-weight: 700;
+  }
+
+  &_primary {
+    color: $primary;
+  }
+}

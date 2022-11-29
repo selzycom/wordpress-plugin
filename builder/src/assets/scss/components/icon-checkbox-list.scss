@@ -1,0 +1,13 @@
+.b-icon-checkbox-list {
+  @include flex-row(nowrap);
+  @include flex-center;
+  border: 1px solid $gray;
+  border-radius: 4px;
+  min-height: 37px;
+}
+
+.b-icon-checkbox-list__item {
+  width: calc(18px + offset(2));
+  height: calc(18px + offset(2));
+  padding: offset(1);
+}
