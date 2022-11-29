@@ -111,7 +111,7 @@ $messages = [
     <div class="b-unisender-form__main">
         <?php foreach ($form['fields'] as $index => $field) : ?>
             <?php if ($field['field']['title']) :?>
-                <?= View::render(SelzyFormFieldTypes::getView($field['field']['type']), [
+                <?= Selzy\ViewWrapper\View::render(SelzyFormFieldTypes::getView($field['field']['type']), [
                     'data' => $field,
                     'index' => $index
                 ]) ?>
